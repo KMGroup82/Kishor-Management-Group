@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kishor Management Group - Professional facility and service management solutions in Noida, Uttar Pradesh.">
+<title>Kishor Management Group | Professional Service Provider</title>
+<style>
+:root{--orange:#ff5b20;--yellow:#f5c400;--dark:#151515;--light:#f7f8fa;--muted:#666}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--dark);line-height:1.6;background:#fff}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #eee}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{height:55px;width:auto;object-fit:contain}
+nav{display:flex;gap:25px;font-weight:700;font-size:14px}
+nav a:hover{color:var(--orange)}
+.btn{display:inline-block;background:var(--orange);color:#fff;padding:13px 22px;border-radius:8px;font-weight:700}
+.btn:hover{background:#e94c16}
+.hero{background:linear-gradient(135deg,#fff 0%,#fff7f2 55%,#fff 100%);padding:85px 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}
+.badge{display:inline-block;background:#fff0e9;color:#d9440e;padding:8px 13px;border-radius:30px;font-weight:700;font-size:13px;margin-bottom:18px}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.05;margin-bottom:20px}
+.hero h1 span{color:var(--orange)}
+.hero p{font-size:18px;color:var(--muted);max-width:650px;margin-bottom:28px}
+.hero-card{background:#151515;border-radius:22px;padding:35px;color:#fff;box-shadow:0 18px 50px rgba(0,0,0,.15)}
+.hero-card h3{font-size:25px;margin-bottom:12px}
+.hero-card p{color:#ddd;font-size:15px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:25px}
+.stat{background:#242424;padding:16px;border-radius:12px}
+.stat b{display:block;font-size:22px;color:#ff8a5f}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+.section-head h2{font-size:38px;margin-bottom:10px}
+.section-head p{color:var(--muted)}
+.services{background:var(--light)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;padding:28px;border-radius:16px;border:1px solid #eee;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.07)}
+.icon{font-size:32px;margin-bottom:12px}
+.card h3{margin-bottom:8px}
+.card p{color:var(--muted);font-size:15px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-box{background:#151515;color:#fff;padding:40px;border-radius:20px}
+.about-box h3{font-size:30px;margin-bottom:14px}
+.about-box p{color:#ddd}
+.checks{list-style:none;margin-top:20px}
+.checks li{margin:11px 0}
+.checks li::before{content:"✓";color:var(--orange);font-weight:bold;margin-right:10px}
+.contact{background:#151515;color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact p{color:#ccc}
+.contact-item{padding:18px 0;border-bottom:1px solid #333}
+.contact-item strong{display:block;color:#fff;margin-bottom:4px}
+.contact a{color:#ff8a5f}
+form{background:#fff;padding:28px;border-radius:16px;color:#151515}
+input,textarea{width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ddd;border-radius:8px;font:inherit}
+textarea{min-height:110px;resize:vertical}
+footer{background:#0d0d0d;color:#aaa;padding:24px 0;text-align:center;font-size:13px}
+.menu{display:none;background:none;border:0;font-size:28px}
+@media(max-width:800px){
+ nav{display:none}.menu{display:block}
+ .hero{padding:55px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr}
+}
+@media(max-width:520px){.grid{grid-template-columns:1fr}.logo{height:48px}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a href="#home"><img class="logo" src="logo.jpg" alt="Kishor Management Group logo"></a>
+<nav>
+<a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a>
+</nav>
+<button class="menu" onclick="document.querySelector('nav').style.display=document.querySelector('nav').style.display==='flex'?'none':'flex'">☰</button>
+</div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="container hero-grid">
+<div>
+<div class="badge">Professional Service Provider • Noida, Uttar Pradesh</div>
+<h1>Reliable Services.<br><span>One Trusted Partner.</span></h1>
+<p>Kishor Management Group provides dependable maintenance, facility management, cleaning, decoration and event management solutions for businesses and institutions.</p>
+<a class="btn" href="#contact">Get in Touch</a>
+<a class="btn" style="background:#151515;margin-left:8px" href="tel:+917428312466">Call Now</a>
+</div>
+<div class="hero-card">
+<h3>Complete Service Solutions</h3>
+<p>From electrical and AC maintenance to deep cleaning, decoration and event management, our team helps keep your operations running smoothly.</p>
+<div class="stats">
+<div class="stat"><b>6+</b><span>Service Areas</span></div>
+<div class="stat"><b>24/7</b><span>Support Focus</span></div>
+<div class="stat"><b>NOIDA</b><span>Based</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+<div class="section-head"><h2>Our Services</h2><p>Flexible service solutions tailored to commercial, institutional and event requirements.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">⚡</div><h3>Electrical Maintenance</h3><p>Electrical maintenance and support services for bank branches, ATMs and other commercial facilities.</p></div>
+<div class="card"><div class="icon">❄️</div><h3>AC Maintenance</h3><p>Maintenance and service support for air-conditioning systems and related equipment.</p></div>
+<div class="card"><div class="icon">🧹</div><h3>Deep Cleaning</h3><p>Professional deep-cleaning solutions for offices, commercial spaces and facilities.</p></div>
+<div class="card"><div class="icon">🎨</div><h3>Decoration</h3><p>Decoration and setup services for corporate functions, celebrations and special occasions.</p></div>
+<div class="card"><div class="icon">🎪</div><h3>Event Management</h3><p>Planning, coordination and on-ground support for events and business functions.</p></div>
+<div class="card"><div class="icon">🛠️</div><h3>Other Facility Services</h3><p>Additional service solutions based on your facility, maintenance and operational requirements.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="container about-grid">
+<div>
+<div class="badge">About Kishor Management Group</div>
+<h2 style="font-size:38px;margin-bottom:15px">A single partner for multiple service needs.</h2>
+<p style="color:#666">Kishor Management Group is a Noida-based service provider focused on practical, dependable and professional facility support. We work across maintenance and service categories to help organizations manage their day-to-day requirements.</p>
+<ul class="checks">
+<li>Professional service coordination</li>
+<li>Multiple services under one roof</li>
+<li>Commercial and institutional support</li>
+<li>Focused on reliable execution</li>
+</ul>
+</div>
+<div class="about-box">
+<h3>Serving businesses with dependable support.</h3>
+<p>Our service portfolio includes electrical maintenance, AC maintenance, deep cleaning, decoration, event management and other facility-related services.</p>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container contact-grid">
+<div>
+<div class="badge">Contact Us</div>
+<h2 style="font-size:40px;margin-bottom:12px">Let's discuss your service requirement.</h2>
+<p>Tell us what service you need and our team can get in touch with you.</p>
+<div class="contact-item"><strong>Phone</strong><a href="tel:+917428312466">+91 74283 12466</a></div>
+<div class="contact-item"><strong>Email</strong><a href="mailto:Kishormanagenentgroup@gmail.com">Kishormanagenentgroup@gmail.com</a></div>
+<div class="contact-item"><strong>Office</strong><span>Noida Sector 110, G.B. Nagar, Uttar Pradesh – 201304</span></div>
+</div>
+<form onsubmit="sendMail(event)">
+<h3 style="font-size:24px;margin-bottom:12px">Send an Enquiry</h3>
+<label>Name</label><input id="name" required>
+<label>Phone</label><input id="phone" required>
+<label>Service Required</label><input id="service" placeholder="e.g. Electrical / AC / Cleaning">
+<label>Message</label><textarea id="message" placeholder="Tell us about your requirement"></textarea>
+<button class="btn" type="submit" style="border:0;cursor:pointer">Send on WhatsApp</button>
+</form>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">© 2026 Kishor Management Group. All rights reserved.</div>
+</footer>
+
+<script>
+function sendMail(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const service=document.getElementById('service').value.trim();
+ const message=document.getElementById('message').value.trim();
+
+ const text =
+ `*New Website Enquiry - Kishor Management Group*\n\n` +
+ `*Name:* ${name}\n` +
+ `*Phone:* ${phone}\n` +
+ `*Service:* ${service}\n` +
+ `*Message:* ${message}`;
+
+ const whatsappUrl = `https://wa.me/917428312466?text=${encodeURIComponent(text)}`;
+ window.open(whatsappUrl, '_blank');
+}
+</script>
+</body>
+</html>
